@@ -1,0 +1,58 @@
+<div class="checkout-container">
+    <h2>Checkout</h2>
+
+      <!-- Customer Information -->
+      <h3>Customer Information</h3>
+      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input id="name" formControlName="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input id="email" formControlName="email" />
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone:</label>
+          <input id="phoneNumber" formControlName="phoneNumber" />
+        </div>
+  
+          <!-- Address Information -->
+      <h3>Address Information</h3>
+      <div class="form-group">
+        <label for="houseNo">House No:</label>
+        <input id="houseNo" formControlName="houseNo" />
+      </div>
+      <div class="form-group">
+        <label for="street">Street:</label>
+        <input id="street" formControlName="street" />
+      </div>
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input id="city" formControlName="city" />
+      </div>
+      <div class="form-group">
+        <label for="state">State:</label>
+        <input id="state" formControlName="state" />
+      </div>
+      <div class="form-group">
+        <label for="zipcode">Zip Code:</label>
+        <input id="zipcode" formControlName="zipcode" />
+      </div>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <input id="country" formControlName="country" />
+      </div>
+  
+       <!-- Order Summary Details -->
+       <div>
+        <p>Total Quantity: {{ totalQuantity$ | async }}</p>
+        <p>Shipping: Free</p>
+        <p>Total Price: ${{ totalPrice$ | async }}</p>
+    </div>
+  
+      <!-- Place Order Button -->
+      <button type="openRazorpay()" class="btn btn-success">Place Order</button>
+    </form>
+  </div>
+  

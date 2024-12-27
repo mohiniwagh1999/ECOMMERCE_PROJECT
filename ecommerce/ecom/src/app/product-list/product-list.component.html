@@ -1,0 +1,34 @@
+
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="row">
+             <!-- loop over the collection of products -->
+        <div *ngFor="let tempProduct of products" class="col-md-3">
+            <div class="product-box">
+
+
+                <a routerLink="/products/{{tempProduct.id}}">
+                    <img src="{{ tempProduct.imageUrl }}" class="img-responsive">
+                    <h1>{{ tempProduct.name }}</h1>
+                </a>
+                
+               
+
+
+              
+                <div class="price">{{ tempProduct.unitPrice }}</div>
+               
+                <button (click)="addToCart(tempProduct)" class="btn btn-success">Add to cart</button>
+          
+            </div>
+        </div>
+        </div>
+
+
+        <div *ngIf="products.length==0" class="alert alert-warning col-md-12">
+            No Records Found
+        </div>
+    </div>
+</div>
+
+

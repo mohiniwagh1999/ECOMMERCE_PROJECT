@@ -1,0 +1,42 @@
+.payment-failure {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #ffe6e6; /* Light red background for error */
+    border: 1px solid #ff4d4d; /* Red border for emphasis */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-failure h2 {
+    font-size: 2rem;
+    color: #e60000; /* Bold red for error message */
+    margin-bottom: 20px;
+  }
+  
+  .payment-failure p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .payment-failure button {
+    padding: 10px 20px;
+    background-color: #ff4d4d; /* Red color for retry button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-failure button:hover {
+    background-color: #e60000; /* Darker red on hover */
+  }
+  
+  .payment-failure button:focus {
+    outline: none;
+  }
+  

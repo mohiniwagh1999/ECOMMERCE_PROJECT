@@ -1,0 +1,41 @@
+.order-success {
+    text-align: center;
+    margin: 75px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-success h2 {
+    font-size: 2rem;
+    color: #28a745; /* Success color (green) */
+    margin-bottom: 20px;
+  }
+  
+  .order-success p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .order-success button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-success button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .order-success button:focus {
+    outline: none;
+  }
+  

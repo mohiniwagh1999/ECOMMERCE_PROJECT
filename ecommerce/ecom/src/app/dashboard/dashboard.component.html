@@ -1,0 +1,19 @@
+<div class="dashboard-container">
+    <h2>Order Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Order Tracking Number</th>
+          <th>Order Status</th>
+          <th>Order Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders">
+          <td>{{ order.orderTrackingNumber }}</td>
+          <td>{{ order.orderStatus }}</td>
+          <td>{{ order.totalQuantity }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
